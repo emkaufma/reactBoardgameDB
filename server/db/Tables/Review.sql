@@ -1,0 +1,11 @@
+USE boardgameDB;
+
+DROP TABLE IF EXISTS Review;
+
+CREATE TABLE Review (
+	GroupId INT UNSIGNED NOT NULL,
+    UserId INT UNSIGNED NOT NULL,
+    ReviewScore INT UNSIGNED NOT NULL,
+    ReviewTitle VARCHAR(200) NOT NULL,
+    ReviewText VARCHAR(5000) NOT NULL
+);

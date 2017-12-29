@@ -1,0 +1,9 @@
+USE boardgameDB;
+
+DROP TABLE IF EXISTS GroupXUser;
+
+CREATE TABLE GroupXUser (
+	GroupId INT UNSIGNED NOT NULL,
+    UserId INT UNSIGNED NOT NULL,
+    UserRole VARCHAR(50) NOT NULL
+);
